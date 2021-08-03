@@ -1,24 +1,39 @@
 $primary : #97efff;
 $secondary :#63b4d6 ;
 
+.body{
+    width : 100%;
+    margin :0;
+    padding :0;
+}
 .nav{
     background-image: url("../img/nav.jpg");
     background-repeat: repeat-x;
-    height : 100px;
+    height : 75px;
+    & h1{
+        font-size: 30px;
+        position: relative;
+        top : 45px;
+        left : 20px;
+    }
     &__photo{
         object-fit: cover;
-        width : 150px;
-        height: 150px;
-        border-radius: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 35px;
+        width : 120px;
+        height: 120px;
+        border-radius: 60px;
+        position: absolute;
+        right : 60px;
+        top : 10px;
     }
 }
 
-
+.intro{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding : 10px;
+}
 .corps{
-    margin-top: 55px;
+    padding-top: 0;
     width : 100%;
     display : flex;
     flex-direction: row;
@@ -49,6 +64,41 @@ $secondary :#63b4d6 ;
             }
             & h3{
                 font-size: large;
+            }
+            &-certif{
+                color : black;
+            }
+        }
+    }
+    &__right{
+        width : 50%;
+        padding-left : 5%;
+        padding-right : 5%;
+        flex-direction: row;
+        & h2{
+            text-decoration: underline;
+        }
+        &-expe{
+            border-radius: 15px;
+            background-color: $secondary;
+            padding-left : 100px;
+        }
+        &-ability{
+            border-radius: 15px;
+            background-color: $primary;
+            padding-left : 100px;
+            & h2{
+                text-decoration: underline;
+            }
+            &-col{
+                display: flex;
+                flex-direction: row;
+                &-1{
+                    width : 50%;
+                }
+                &-2{
+                    width : 50%;
+                }
             }
         }
     }
