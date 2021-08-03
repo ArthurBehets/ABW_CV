@@ -1,0 +1,16 @@
+.nav {
+  background-image: url("../img/nav.jpg");
+  background-repeat: repeat-x;
+  height: 100px;
+}
+.nav__photo {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
