@@ -10,20 +10,22 @@ $secondary :#63b4d6 ;
     background-image: url("../img/nav.jpg");
     background-repeat: repeat-x;
     height : 75px;
+    &__flex{
+        display :flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width : 100%;
+    }
     & h1{
         font-size: 30px;
-        position: relative;
-        top : 45px;
-        left : 20px;
+        margin : 30px;
     }
     &__photo{
         object-fit: cover;
         width : 120px;
         height: 120px;
         border-radius: 60px;
-        position: absolute;
-        right : 60px;
-        top : 10px;
+        margin-right : 15px;
     }
 }
 
@@ -31,6 +33,7 @@ $secondary :#63b4d6 ;
     margin-top: 20px;
     margin-bottom: 0;
     padding : 10px;
+    width : 80%;
 }
 .corps{
     padding-top: 0;
@@ -45,7 +48,7 @@ $secondary :#63b4d6 ;
         border-right: solid 1px black;
         &-infos{
             background-color: $primary;
-            padding-left : 100px;
+            padding-left : 50px;
             border-radius: 15px;
             & h2{
                 text-decoration: underline;
@@ -57,8 +60,9 @@ $secondary :#63b4d6 ;
         &-studies{
             border-radius: 15px;
             background-color: $secondary;
-            padding-left : 100px;
+            padding-left : 50px;
             margin-top: 20px;
+            word-wrap: break-word ;
             & h2{
                 text-decoration: underline;
             }
@@ -81,14 +85,18 @@ $secondary :#63b4d6 ;
         &-expe{
             border-radius: 15px;
             background-color: $secondary;
-            padding-left : 100px;
+            padding-left : 50px;
+            word-wrap: break-word;
         }
         &-ability{
             border-radius: 15px;
             background-color: $primary;
-            padding-left : 100px;
+            padding-left : 50px;
             & h2{
                 text-decoration: underline;
+            }
+            & h3{
+                font-size: large;
             }
             &-col{
                 display: flex;
@@ -104,11 +112,44 @@ $secondary :#63b4d6 ;
     }
 }
 
-// &-expe{
-//     & h2{
-//         text-decoration: underline;
-//     }
-//     & h3{
-//         font-size: large;
-//     }
-// }
+.projects{
+    &__left{
+        word-wrap: break-word;
+    }
+}
+
+@media(min-width : 992px){
+    .projects{
+        &__left{
+            border-right : 1px black solid;
+        }
+    }
+}
+
+@media(max-width : 768px){
+    .nav{
+        height: 100px;
+        & h1{
+            width : 50%;
+        }
+    }
+    .corps{
+        &__left{
+            &-infos{
+                padding-left : 20px;
+            }
+            &-studies{
+                padding-left : 20px;
+            }
+        }
+        &__right{
+            &-expe{
+                padding-left : 20px;
+            }
+            &-ability{
+                padding-left : 20px;
+            }
+        }
+    }
+}
+
