@@ -78,6 +78,10 @@ $secondary :#63b4d6 ;
             padding-left : 50px;
             margin-top: 20px;
             word-wrap: break-word ;
+            &-a{
+                color : black;
+                text-decoration: none;
+            }
             & h2{
                 text-decoration: underline;
             }
