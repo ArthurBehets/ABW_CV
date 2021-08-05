@@ -28,7 +28,8 @@
 }
 .nav h1 {
   font-size: 30px;
-  margin: 30px;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 .nav__photo {
   object-fit: cover;
@@ -104,6 +105,7 @@
   border-radius: 15px;
   background-color: #97efff;
   padding-left: 50px;
+  word-wrap: break-word;
 }
 .corps__right-ability h2 {
   text-decoration: underline;
@@ -126,38 +128,11 @@
   word-wrap: break-word;
 }
 
-@media (min-width: 992px) {
-  .projects__left {
-    border-right: 1px black solid;
-  }
-}
-@media (max-width: 768px) {
-  .nav {
-    height: 100px;
-  }
-  .nav h1 {
-    width: 50%;
-  }
-
-  .corps__left-infos {
-    padding-left: 20px;
-  }
-  .corps__left-studies {
-    padding-left: 20px;
-  }
-  .corps__right-expe {
-    padding-left: 20px;
-  }
-  .corps__right-ability {
-    padding-left: 20px;
-  }
-}
 .popup__content {
   background-color: #97efff;
   position: absolute;
   z-index: 999;
   width: 60%;
-  height: 60%;
   top: 20%;
   left: 20%;
   border: 0.5px solid black;
@@ -185,6 +160,73 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@media (min-width: 992px) {
+  .projects__left {
+    border-right: 1px black solid;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    height: 100px;
+  }
+  .nav h1 {
+    width: 50%;
+  }
+
+  .intro {
+    margin-top: 40px;
+  }
+
+  .corps__left-infos {
+    padding-left: 20px;
+  }
+  .corps__left-studies {
+    padding-left: 20px;
+  }
+  .corps__right-expe {
+    padding-left: 20px;
+  }
+  .corps__right-ability {
+    padding-left: 20px;
+  }
+
+  .popup__content {
+    width: 80%;
+    left: 10%;
+    top: 10%;
+  }
+}
+@media (max-width: 478px) {
+  .popup__content {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+  }
+
+  .intro {
+    margin-top: 80px;
+  }
+
+  .corps {
+    flex-direction: column;
+  }
+  .corps__left {
+    border: none;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .corps__right {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 310px) {
+  .nav h1 {
+    margin-left: 0;
   }
 }
 
