@@ -15,6 +15,17 @@
   flex-direction: row;
   width: 100%;
 }
+.nav__link {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: black;
+  text-decoration: none;
+}
+.nav__link-motiv {
+  color: black;
+  text-decoration: none;
+}
 .nav h1 {
   font-size: 30px;
   margin: 30px;
@@ -139,6 +150,41 @@
   }
   .corps__right-ability {
     padding-left: 20px;
+  }
+}
+.popup__content {
+  background-color: #97efff;
+  position: absolute;
+  z-index: 999;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  border: 0.5px solid black;
+  animation: coming 1500ms;
+  animation-fill-mode: forwards;
+  transition: 1500ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+.popup__content-button {
+  object-position: bottom;
+  height: 40px;
+  background-color: #97efff;
+  border: none;
+}
+.popup__content-p {
+  padding: 20px;
+}
+
+@keyframes coming {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
