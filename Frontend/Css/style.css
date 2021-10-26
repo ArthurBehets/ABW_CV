@@ -61,11 +61,8 @@
 }
 .corps__left-infos {
   background-color: #97efff;
-  padding-left: 50px;
+  padding-left: 10px;
   border-radius: 15px;
-}
-.corps__left-infos h2 {
-  text-decoration: underline;
 }
 .corps__left-infos h3 {
   font-size: large;
@@ -73,7 +70,7 @@
 .corps__left-studies {
   border-radius: 15px;
   background-color: #63b4d6;
-  padding-left: 50px;
+  padding-left: 10px;
   margin-top: 20px;
   word-wrap: break-word;
 }
@@ -81,13 +78,19 @@
   color: black;
   text-decoration: none;
 }
-.corps__left-studies h2 {
-  text-decoration: underline;
+.corps__left-studies-a:hover {
+  color: black;
 }
 .corps__left-studies h3 {
   font-size: large;
 }
 .corps__left-studies-certif {
+  font-size: 20px;
+}
+.corps__left-studies-certif-a {
+  color: black;
+}
+.corps__left-studies-certif-a:hover {
   color: black;
 }
 .corps__right {
@@ -96,23 +99,17 @@
   padding-right: 5%;
   flex-direction: row;
 }
-.corps__right h2 {
-  text-decoration: underline;
-}
 .corps__right-expe {
   border-radius: 15px;
   background-color: #63b4d6;
-  padding-left: 50px;
+  padding-left: 10px;
   word-wrap: break-word;
 }
 .corps__right-ability {
   border-radius: 15px;
   background-color: #97efff;
-  padding-left: 50px;
+  padding-left: 10px;
   word-wrap: break-word;
-}
-.corps__right-ability h2 {
-  text-decoration: underline;
 }
 .corps__right-ability h3 {
   font-size: large;

@@ -63,11 +63,8 @@ $secondary :#63b4d6 ;
         border-right: solid 1px black;
         &-infos{
             background-color: $primary;
-            padding-left : 50px;
+            padding-left : 10px;
             border-radius: 15px;
-            & h2{
-                text-decoration: underline;
-            }
             & h3{
                 font-size: large;
             }
@@ -75,21 +72,27 @@ $secondary :#63b4d6 ;
         &-studies{
             border-radius: 15px;
             background-color: $secondary;
-            padding-left : 50px;
+            padding-left : 10px;
             margin-top: 20px;
             word-wrap: break-word ;
             &-a{
                 color : black;
                 text-decoration: none;
-            }
-            & h2{
-                text-decoration: underline;
+                &:hover{
+                    color: black;
+                }
             }
             & h3{
                 font-size: large;
             }
             &-certif{
-                color : black;
+                &-a{
+                    color : black;
+                    &:hover{
+                        color: black;
+                    }
+                }
+                font-size: 20px;
             }
         }
     }
@@ -98,23 +101,17 @@ $secondary :#63b4d6 ;
         padding-left : 5%;
         padding-right : 5%;
         flex-direction: row;
-        & h2{
-            text-decoration: underline;
-        }
         &-expe{
             border-radius: 15px;
             background-color: $secondary;
-            padding-left : 50px;
+            padding-left : 10px;
             word-wrap: break-word;
         }
         &-ability{
             border-radius: 15px;
             background-color: $primary;
-            padding-left : 50px;
+            padding-left : 10px;
             word-wrap: break-word;
-            & h2{
-                text-decoration: underline;
-            }
             & h3{
                 font-size: large;
             }
