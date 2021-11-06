@@ -63,9 +63,13 @@ $secondary :#63b4d6 ;
         padding-right : 5%;
         flex-direction: row;
         border-right: solid 1px black;
+        & p{
+            word-wrap: break-word ;
+        }
         &-infos{
             background-color: $primary;
             padding-left : 10px;
+            padding-right : 10px;
             border-radius: 15px;
             & h3{
                 font-size: large;
@@ -75,6 +79,7 @@ $secondary :#63b4d6 ;
             border-radius: 15px;
             background-color: $secondary;
             padding-left : 10px;
+            padding-right : 10px;
             margin-top: 20px;
             word-wrap: break-word ;
             &-a{
@@ -107,12 +112,14 @@ $secondary :#63b4d6 ;
             border-radius: 15px;
             background-color: $secondary;
             padding-left : 10px;
+            padding-right : 10px;
             word-wrap: break-word;
         }
         &-ability{
             border-radius: 15px;
             background-color: $primary;
             padding-left : 10px;
+            padding-right : 10px;
             word-wrap: break-word;
             & h3{
                 font-size: large;
