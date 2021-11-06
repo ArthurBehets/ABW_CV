@@ -9,7 +9,7 @@
         
         <title>Behets W. Arthur CV</title>
     </head>
-    <body class="body">
+    <header>
         <!-- Nav -->
         <nav class="nav nav__flex">
             <h1 class="mt-5">Curriculum Vitae : Arthur Behets Wydemans</h1>
@@ -17,13 +17,14 @@
         </nav>
         <div id="motivation" class="nav__link"></div>
         <!-- Nav END -->
-       <section class="intro">
-        <p>Recherche emploi à temps plein en tant que Développeur Web frontend/backend/fullstack, le plus tôt possible.</p>
-       </section>
-        <!-- Corps -->
-        <div class="corps">
-           <!-- Left Side -->
-            <section class="corps__left">
+    </header>
+    <body>
+        <section class="intro">
+            <p>Recherche emploi à temps plein en tant que Développeur Web frontend/backend/fullstack, le plus tôt possible.</p>
+        </section>
+        <section class="corps bubbles">
+        <!-- Left Side -->
+            <div class="corps__left">
                 <!-- Infos -->
                 <div class="corps__left-infos">
                     <h2>Infos</h2>
@@ -42,13 +43,12 @@
                     <p>2018 - 2020 : Haute École en Technique Informatique<br>Ephec</p>
                     <p>Jan 2021 - 9/10/21 : Formation en ligne en Développeur Web<br>Openclassroom -> <a class="corps__left-studies-a" href="https://openclassrooms.com/fr/paths/185-developpeur-web">https://openclassrooms.com/fr/paths/185-developpeur-web</a></p>
                     <p>Maintenant : Je me forme pour connaitre d'avantage de langages web tout en postulant.</p>
-                    <p class="corps__left-studies-certif"><a class="corps__left-studies-certif-a" href="Html/certifs.html">Voir les certificats et projets réalisés.</a></p>
                 </div>
                 <!-- Studies END -->
-            </section>
+            </div>
             <!-- Left Side END -->
             <!-- Right Side -->
-            <section class="corps__right">
+            <div class="corps__right">
                 <div class="corps__right-expe">
                     <h2>Expériences professionnelle et organisationnelle</h2>
                     <p>Septembre 2016 - Juillet 2021 : Chef scout<br>Tâches réalisées : Organisation d'évènements et animation de jeunes de 6 à 16 ans (en fonction des années).</p>
@@ -60,17 +60,17 @@
                     <h2>Compétences</h2>
                     <div class="corps__right-ability-col">
                         <div class="corps__right-ability-col-1">
-                            <h3>Langues : </h3>
-                            <p>Français : langue maternelle<br>Anglais : b2</p>
+                            <h3>Langages :</h3>
+                            <p>HTML, CSS (Sass), Bootstrap, JS (VueJs, React) <br> Sql, Node.js, REST <br> Git/Github<br><br>Logiciels : Visual Studio Code, SQL Workbench, SQL Anywhere, Insomnia, Postman, Google Analytics, MongoDB, Word, Excel, Powerpoint</p>
                         </div>
                         <div class="corps__right-ability-col-2">
-                            <h3>Langages :</h3>
-                            <p>html, css (scss), js, sql, node.js, vue.js, react, bootstrap, git/github<br>Logiciels : word, excel, visual studio code, SQL Workbench, SQL anywhere, insomnia, postman, powerpoint</p>
+                            <h3>Langues : </h3>
+                            <p>Français : langue maternelle<br>Anglais : B2</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="popup" id="popup">
             <div class="popup__content">
                 <p class="popup__content-p">
@@ -83,6 +83,43 @@
                 <button onclick="disparition()" class="popup__content-button">
                     Masquer <i class="fas fa-arrow-alt-circle-right"></i>
                 </button>
+            </div>
+        </section>
+        <section class="corps">
+            <div class="corps__left">
+                <h2 class="h4">
+                    Projets réalisés avec le parcours Openclassroom : 
+                </h2>
+                <p>Projet 2 : <a href="https://arthurbehets.github.io/ArthurBehetsWydemans_2_25012021/">https://arthurbehets.github.io/ArthurBehetsWydemans_2_25012021/</a><br>Recopier le visuel d'une maquette.<br><a href="img/P2.png">Schreenshot collés du projet 2</a></p>
+                <p>Projet 3 : <a href="https://arthurbehets.github.io/ArthurBehetsWydemans_3_18022021/">https://arthurbehets.github.io/ArthurBehetsWydemans_3_18022021/ </a><br>Recopier le visuel de photos d'écrans smartphone et l'adapter aussi pour les autres écrans. Animations présentes sur les éléments du menu en :active et animations au chargement des pages.<br><a href="img/P3.png">Schreenshot collés du projet 3</a></p>
+                <p>Projet 4 : <a href="https://arthurbehets.github.io/ArthurBehets-ArthurBehetsWydemans_4_260321/">https://arthurbehets.github.io/ArthurBehets-ArthurBehetsWydemans_4_260321/</a><br>Optimiser un site web existant au niveau de la SEO et de l'accessibilité. (balises meta, alt, supprimer les black-hat, adapter les couleurs,...)</p>
+                <p>Projet 5 : <a href="https://arthurbehets.github.io/BehetsWydemansArthur_5_030521//frontend/Index.html">https://arthurbehets.github.io/BehetsWydemansArthur_5_030521//frontend/Index.html</a><br>Avec une api existente, construire un site de vente en ligne.(Se connecter au port 3000 pour le bon fonctionnement du site).<br><a href="img/P5.png">Schreenshot collés du projet 5</a></p>
+                <p>Projet 6 : <a href="https://github.com/ArthurBehets/BehetsWydemansArthur_6_200721.git">https://github.com/ArthurBehets/BehetsWydemansArthur_6_200721.git</a><br>Avec un frontend existant, construire l'api pour le faire fonctionner.(Pour des soucis de mot de passe, le dossier .env avec les identifiants mongoDB n'est pas push).</p>
+                <p>Projet 7 : <a href="https://github.com/ArthurBehets/BehetsWydemansArthur_7_200821.git">https://github.com/ArthurBehets/BehetsWydemansArthur_7_200821.git</a><br>Construire entièrement un réseau social d'entreprise avec comme unique consigne des fonctionnalités requises.<br><a href="img/P7.png">Schreenshot collés du projet 7</a></p>
+                <p>Les codes : <a href="https://github.com/ArthurBehets"> https://github.com/ArthurBehets</a></p>
+            </div>
+            <div class="corps__right">
+                <h2 class="h4">Certificats Openclassroom</h2>
+                <a href="./certifs/Capture.PNG">Capture de formation finie en attendant le certificat</a><br>
+                <a href="./certifs/Comprendre_le_Web.pdf">Comprendre le web</a><br>
+                <a href="./certifs/Découvrez_les_métiers_de_développeur.pdf">Découvrir les métiers de développeur</a><br>
+                <a href="./certifs/Développez_vos_softs_skills.pdf">Développer vos softs skills</a><br>
+                <a href="./certifs/Veille_informatique.pdf">Mettre en place une veille informatique</a><br>
+                <a href="./certifs/Apprendre_à_apprendre.pdf">Apprendre à apprendre</a><br>
+                <a href="./certifs/Envrionnement_front-end.pdf">Mettre en place l'envrionnement frontend</a><br>
+                <a href="./certifs/Utilisez_Git_et_Github.pdf">Utilisez Git et Github pour vos projets de développement</a><br>
+                <a href="./certifs/Html5_et_css3.pdf">Apprenez à créer un site en HTML5 et CSS3</a><br>
+                <a href="./certifs/Découpez_et_intégrez_une_maquette.pdf">Découpez et intégrez une maquette</a><br>
+                <a href="./certifs/Sass.pdf">Simplifiez vous le css avec sass</a><br>
+                <a href="./certifs/Animation_css.pdf">Créer des animations css modernes</a><br>
+                <a href="./certifs/SEO.pdf">Optimiser le référencement en améliorant les techniques SEO</a><br>
+                <a href="./certifs/référencement_naturel.pdf">Augmentez votre trafic grâce au référencement naturel</a><br>
+                <a href="./certifs/js.pdf">Apprenez à programmer avec JavaScript</a><br>
+                <a href="./certifs/ecrivez_du_js_pour_le_web.pdf">Écrivez du JS pour le web</a><br>
+                <a href="./certifs/node.js.pdf">Passez au full stack avec node.js, express et mongoDB</a><br>
+                <a href="./certifs/owasp.pdf">Sécurisez vos applications web avec l'OWASP</a><br>
+                <a href="./certifs/rest.pdf">Adoptez les API REST pour vos projets web</a><br>
+                <a href="./certifs/html_css_interface.pdf">Utiliser HTML 5 pour l'interface utilisateur</a>
             </div>
         </section>
     </body>

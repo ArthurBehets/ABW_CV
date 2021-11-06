@@ -48,9 +48,11 @@ $secondary :#63b4d6 ;
     margin-top: 20px;
     margin-bottom: 0;
     padding : 10px;
+    padding-left : 3%;
     width : 80%;
 }
 .corps{
+    padding-bottom : 70px;
     padding-top: 0;
     width : 100%;
     display : flex;
@@ -120,7 +122,7 @@ $secondary :#63b4d6 ;
                 flex-direction: row;
                 &-1{
                     width : 50%;
-                    padding-right: 5px;
+                    padding-right : 5%;
                 }
                 &-2{
                     width : 50%;
